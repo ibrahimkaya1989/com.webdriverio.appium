@@ -2,7 +2,8 @@
   "name": "com.webdriverio.appium",
   "version": "1.0.0",
   "scripts": {
-    "test": "npx wdio run wdio.conf.ts"
+    "test": "npx wdio run wdio.conf.ts",
+    "test:allure": "allure serve ./allure-results/"
   },
   "keywords": [],
   "author": "",

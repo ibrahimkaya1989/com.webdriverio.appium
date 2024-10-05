@@ -28,8 +28,8 @@
         "transpileOnly": true   
     },
     "include": [
-        "./features/step-definitions/*.ts",
-        "./features/pageobjects/*.ts",
+        "features/step-definitions/*.ts",
+        "features/pages/*.ts",
         "wdio.conf.ts"
     ],
     "exclude": ["node_modules"]
