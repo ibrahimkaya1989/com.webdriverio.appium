@@ -129,7 +129,7 @@ export const config: WebdriverIO.Config = {
     // Appium server options
     hostname: 'localhost',
     port: 4723,
-    path: '/', // wd/hub
+    path: '/wd/hub', // wd/hub
     
 
 
