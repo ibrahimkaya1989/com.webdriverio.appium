@@ -54,11 +54,11 @@ export const config: WebdriverIO.Config = {
     capabilities: [{
         // capabilities for local Appium web tests on an Android Emulator
         platformName: 'Android',
-        //browserName: 'Chrome',
+        browserName: 'Chrome',
         'appium:udid': 'R6CT400PWGR',
         'appium:deviceName': 'R6CT400PWGR',
-        'appium:appPackage': 'com.sec.android.app.popupcalculator',
-        'appium:appActivity': 'com.sec.android.app.popupcalculator.Calculator',
+        //'appium:appPackage': 'com.sec.android.app.popupcalculator',
+        //'appium:appActivity': 'com.sec.android.app.popupcalculator.Calculator',
         'appium:platformVersion': '14',
         'appium:automationName': 'UiAutomator2' // Appium UiAutomator2
     }],
@@ -190,7 +190,7 @@ export const config: WebdriverIO.Config = {
         strict: false,
         // <string> (expression) only execute the features or scenarios with tags matching the expression
         tagExpression: '',
-        tags: '@Calculator',
+        tags: '@Login', // @Login @Calculator
         // <number> timeout for step definitions
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.

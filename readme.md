@@ -9,9 +9,11 @@ npm install @wdio/appium-service appium allure-commandline --save-dev
 ```bash
 allure --version
 allure serve .\allure-results\
-del .\allure-results\*
 allure generate .\allure-results\ --clean -o allure-report
 allure open allure-report
+
+del .\allure-results\*
+del .\allure-report\*
 ```
 
 ### Running
