@@ -13,10 +13,11 @@ class CalculatorPage {
     get buttonEight() { return $(`//android.widget.Button[@text="8"]`); }
     get buttonNine() { return $(`//android.widget.Button[@text="9"]`); }
     get buttonAdd() { return $(`//android.widget.Button[@text="+"]`); }
-    get buttonSub() { return $(`//android.widget.Button[@text="-"]`); }
-    get buttonMul() { return $(`//android.widget.Button[@text="x"]`); }
-    get buttonDiv() { return $(`//android.widget.Button[@text="/"]`); }
+    get buttonSub() { return $(`//android.widget.Button[@text="−"]`); }
+    get buttonMul() { return $(`//android.widget.Button[@text="×"]`); }
+    get buttonDiv() { return $(`//android.widget.Button[@text="÷"]`); }
     get buttonEquals() { return $(`//android.widget.Button[@text="="]`); }
+    get buttonClear() { return $(`//android.widget.Button[@text="C"]`); }
     get result() { return $(`//*[@resource-id='com.sec.android.app.popupcalculator:id/calc_edt_formula']`); }
 
     // Method to perform addition operation
@@ -49,6 +50,11 @@ class CalculatorPage {
         await this.buttonDiv.click();
         await $(`//android.widget.Button[@text="${num2}"]`).click();
         await this.buttonEquals.click();
+    }
+
+    // Method to clear the result
+    async clickOnTheClearButton() {
+        await this.buttonClear.click();
     }
 
     // Method to get the result
