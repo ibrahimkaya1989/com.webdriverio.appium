@@ -11,12 +11,32 @@ allure --version
 allure serve .\allure-results\
 allure generate .\allure-results\ --clean -o allure-report
 allure open allure-report
+```
 
+```bash
 del .\allure-results\*
 del .\allure-report\*
 ```
 
+### Configuration
+
+```bash
+tags: @Calculator
+
+Capabilities:
+'appium:appPackage': 'com.sec.android.app.popupcalculator',
+'appium:appActivity': 'com.sec.android.app.popupcalculator.Calculator',
+```
+
+```bash
+tags: @Login
+
+Capabilities:
+browserName: 'Chrome',
+```
+
 ### Running
+
 ```bash
 npx wdio run wdio.conf.ts
 ```
