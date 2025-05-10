@@ -22,7 +22,7 @@ del .\allure-report\*
 
 ```bash
 tags: @Calculator
-
+specs: './features/calculator.feature'
 Capabilities:
 'appium:appPackage': 'com.sec.android.app.popupcalculator',
 'appium:appActivity': 'com.sec.android.app.popupcalculator.Calculator',
@@ -30,7 +30,7 @@ Capabilities:
 
 ```bash
 tags: @Login
-
+specs: './features/login.feature'
 Capabilities:
 browserName: 'Chrome',
 ```

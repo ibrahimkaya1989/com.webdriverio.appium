@@ -23,7 +23,7 @@ export const config: WebdriverIO.Config = {
     // of the config file unless it's absolute.
     //
     specs: [
-        './features/*.feature'
+        './features/calculator.feature' // * calculator login
     ],
     // Patterns to exclude.
     exclude: [
