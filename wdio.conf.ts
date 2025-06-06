@@ -57,8 +57,8 @@ export const config: WebdriverIO.Config = {
         //browserName: 'Chrome',
         'appium:udid': 'R6CT400PWGR',
         'appium:deviceName': 'R6CT400PWGR',
-        'appium:appPackage': 'com.sec.android.app.popupcalculator',
-        'appium:appActivity': 'com.sec.android.app.popupcalculator.Calculator',
+        'appium:appPackage': 'com.google.android.calculator', // com.sec.android.app.popupcalculator
+        'appium:appActivity': 'com.android.calculator2.Calculator', // com.sec.android.app.popupcalculator.Calculator
         'appium:platformVersion': '14',
         'appium:automationName': 'UiAutomator2' // Appium UiAutomator2
     }],

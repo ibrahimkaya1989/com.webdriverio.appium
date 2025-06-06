@@ -20,9 +20,14 @@ del .\allure-report\*
 
 ### Configuration
 
+For Web Testing
 ```bash
 tags: @Calculator
 specs: './features/calculator.feature'
+```
+
+For Mobile Testing
+```bash
 Capabilities:
 'appium:appPackage': 'com.sec.android.app.popupcalculator',
 'appium:appActivity': 'com.sec.android.app.popupcalculator.Calculator',
