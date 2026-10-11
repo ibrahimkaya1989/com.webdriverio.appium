@@ -1,7 +1,7 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 import { expect } from 'expect-webdriverio';
 
-import CalculatorPage from '../pages/calculator.page';
+import CalculatorPage from '../pages/calculator.page.js';
 
 Given('I launch the calculator app', async () => {
     //await driver.pause(1000);  // Waiting for the app to launch

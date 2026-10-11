@@ -1,8 +1,8 @@
 import { Given, When, Then } from '@wdio/cucumber-framework';
 import { expect } from 'expect-webdriverio';
 
-import LoginPage from '../pages/login.page';
-import SecurePage from '../pages/secure.page';
+import LoginPage from '../pages/login.page.js';
+import SecurePage from '../pages/secure.page.js';
 
 //const pages = { login: LoginPage };
 
